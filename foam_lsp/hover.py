@@ -1,6 +1,3 @@
-import logging
-from datetime import datetime
-
 from lsprotocol import types
 
 from foam_lsp.server import FOAMLanguageServer, server
@@ -42,4 +39,3 @@ def hover(ls: FOAMLanguageServer, params: types.HoverParams):
             end=types.Position(line=pos.line + 1, character=0),
         ),
     )
-
